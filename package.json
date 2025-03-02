@@ -1,0 +1,25 @@
+{
+  "name": "7solution-test",
+  "version": "1.0.0",
+  "description": "User management application with NestJS gRPC backend and Next.js frontend",
+  "scripts": {
+    "install:all": "pnpm install && cd backend && pnpm install && cd ../frontend && pnpm install",
+    "start:backend": "cd backend && pnpm run start:dev",
+    "start:frontend": "cd frontend && pnpm run dev",
+    "start": "concurrently \"pnpm run start:backend\" \"pnpm run start:frontend\"",
+    "build:backend": "cd backend && pnpm run build",
+    "build:frontend": "cd frontend && pnpm run build",
+    "build": "pnpm run build:backend && pnpm run build:frontend"
+  },
+  "keywords": [
+    "nestjs",
+    "nextjs",
+    "grpc",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
