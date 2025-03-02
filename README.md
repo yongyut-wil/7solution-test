@@ -1,4 +1,4 @@
-# 7Solution Test Project
+# Next Nest GRPC Project
 
 This project consists of a NestJS gRPC backend service and a Next.js frontend application with Material UI.
 
