@@ -3,7 +3,7 @@ import { userServiceClient } from '@/services/grpc-client';
 import { promisify } from 'util';
 
 // Promisify the gRPC client method
-const getUsers = promisify(userServiceClient.GetUsers).bind(userServiceClient);
+const getUsers = promisify(userServiceClient.getUsers).bind(userServiceClient);
 
 export async function GET(request: NextRequest) {
   try {

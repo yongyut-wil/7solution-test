@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && node copy-proto.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "copy-proto": "node copy-proto.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -28,6 +29,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.0",
     "tailwindcss": "^4",
+    "ts-proto": "^2.6.1",
     "typescript": "^5"
   }
 }
